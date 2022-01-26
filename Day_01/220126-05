@@ -1,0 +1,22 @@
+/*
+	번호(정수), 이름(문자열 최대길이 : 10), 전화번호(고정된 길이의 문자열 : 13), 이메일(문자열 최대길이: 30)
+    
+	1. 테이블 생성
+    2. row를 추가 
+		(1, 홍길동, 011-1111-1111, hong@hanmail.net)
+        (2, 김유신, 010-2222-2222, kim@hanmail.net)
+	3. 테이블 조회
+*/
+
+CREATE TABLE person(
+	Number INT,
+    Name VARCHAR(10),
+    PhoneNumber CHAR(13),
+    Email VARCHAR(30)
+);
+
+SELECT * FROM person;
+
+INSERT INTO person(Number, Name, PhoneNumber, Email) VALUES (1, "홍길동", "011-1111-1111", "hong@hanmail.net"),
+															(2, "김유신", "010-2222-2222", "kim@hanmail.net");
+                                                            
